@@ -1,0 +1,44 @@
+.nav {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid black;
+}
+
+.name_plate {
+  border: 1px solid black;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  display: inline-block;
+  text-align: center;
+  font-family: "roboto condensed";
+  font-size: 400%;
+  /*color: white;*/
+  /*background-color: white;
+  opacity: 0.2;*/
+}
+
+/* Backgrounds will cover all the section
+  * --------------------------------------- */
+  #header,
+  #section1,
+  #section2,
+  #section3{
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* Defining each sectino background and styles
+  * --------------------------------------- */
+  #header{
+    background-image: url(header-bg.jpg);
+  }
+  #section2{
+    background-image: url(imgs/bg3.jpg);
+    padding: 6% 0 0 0;
+  }
+  #section3{
+    background-image: url(imgs/bg4.jpg);
+    padding: 6% 0 0 0;
+  }
