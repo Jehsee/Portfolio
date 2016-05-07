@@ -15,40 +15,85 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- GOOGLE FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Comfortaa|Oswald:400,700|Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dosis|Poiret+One|Antic' rel='stylesheet' type='text/css'>
   </head>
 
 <body>
 <nav class="nav">
-  <p>Jesse Hwang</p>
-  <p>Junior Full Stack Developer</p>
-  <ul id="menu">
-      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
-      <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-      <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-  </ul>
+  <p id="name">Jesse Hwang</p>
+  <p id="title">Junior Full Stack Developer</p>
+<!--   <ul id="menu">
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">Me</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">Developer</a></li>
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+  </ul> -->
 </nav>
 
 <div id="fullpage">
 
   <div class="section" id="header">
-    <div class="name_plate">
-      <span class="name">
-        Hello. I am Jesse H.
-      </span>
-      <span class="desc">
 
-      </span>
+        <div class="name_plate">
+          <div id="name_plate_text">
+              <p><span class="greet">
+                Hello! I am Jesse.
+              </span></p>
+              <p><span class="desc">
+                A full stack developer on a coding adventure.
+              </span></p>
+          </div>
 
 
-    </div>
+        </div>
 
 
 
   </div> <!-- closing #header .section -->
 
-  <div class="section">Some section</div>
-  <div class="section">Some section</div>
+  <div class="section" id="developer">
+      <div id="carousel">
+          <div class="slide" id="roast_battle">
+            <div class="project_desc">
+              <h1>Roast Battle App</h1>
+              <p>A fun real time chat application made in Rails. Two users enter a timed “Battle” where each player uses wit and humor to insult their opponent. Other users watch the battle and vote for the funniest player. A timer is set at the beginning of a battle and a win-loss-knockout record is updated for each user at the end of the battle.</p>
+              <img class="project_image" src="roast1.png">
+              <p>This was my final project for my coding bootcamp. The build time for this project was 2 weeks. The first week involved figuring out how to get around the non-asynchronous nature of rails. The first half of week two involved getting the flow of the game to work properly for each user persective (i.e. user who is logged in, user who is logged in and in a "battle", and user not logged in).  </p>
+              <img class="project_image" src="roast3.png">
+              <p>The second half of week two involved styling and deploying to heroku. Design was intended for a light-hearted, fun, and playful user experience. I thought the split screen design was good to represent a battle between two users. I also had a great time playing around with animations.</p>
+              <img class="project_image" src="roast2.png">
+              <p>There's definitely much more that I can work on. As of now its 2 users in a battle and everyone else on the site. There needs to be a queue list for people wanting to join and maybe more than one "arena". I am not completely happy with the design and flow of the game so improvement can be made there. However, I made this from scratch in 2 weeks!! Given that, I am definitely proud of how it turned out.</p>
+              <div id="spacer"></div> <!-- offset to prevent cutoff -->
+            </div>
+          </div>
+
+          <div class="slide" id="laced">
+            <div class="project_desc">
+              <h1>Laced NY</h1>
+              <p>A high end shoe app in Rails that scrapes from multiple name-brand sites using Nokogiri. I had so much fun making this app. Working with Nokogiri definitely got me involved in trying to read through a sea of code. Once we were able to find exactly what elements we needed to target, it was awesome to see the data being pulled onto our own page.</p>
+              <img class="project_image" src="laced1.png">
+              <p>Another fun aspect of this site was to make the intro logo animation. Using SVG and path coordinates, I was able to create the cool fade in effect on page load. This is definitely something that I want to dive deeper into. </p>
+              <img class="project_image" src="laced2.png">
+              <p>Each brand scraped is listed in a nav bar to the side. On click of each brand, the shoes will be filtered out accordingly. This was done using a sorting/filtering layout called isotope which is built on masonry. </p>
+              <img class="project_image" src="laced3.png">
+              <p>This entire project was completed in one week with a group of three. This experience really improved my skills with Git and the whole process of working in a team setting.</p>
+              <img class="project_image" src="laced4.png">
+              <div id="spacer"></div> <!-- offset to prevent cutoff -->
+            </div>
+          </div>
+
+      </div>
+  </div> <!-- closing #developer .section -->
+
+  <div class="section" id="about_me">
+    <div class="profile_pic">
+    </div>
+
+    <div class="about_me_desc">
+      <h1>Who am I?</h1>
+      <p>Within the past 4 years, I have been blessed to have found two passions in my life. The first passion was when I discovered rock climbing. The very first time I went to a climbing gym I was hooked. The thing I love most about climbing is how there's an element of problem solving involved. Questions like, "Why can I not reach that hold?" or "Why do I keep falling off at that part of the climb?" But once you realize what you need to do, you work towards acheiving that goal. "I need to put my body in this position before I make the next move." and then you think, "Okay, I'm in the right position but I need to keep my shoulder close to the wall while moving."</p>
+      <p>My second passion was discovered this year, with coding. Without a doubt, the reasons I love climbing is also why I love coding. When you don't want to go home after a 12 hour coding session, I think it's safe to say that you've found something you enjoy. Coding is all about problem solving each step of the way. The feeling you get when you solve a problem you've been stuck on for a while is equivalent to the feeling you get when you get to the top of a climb you've been working on. </p>
+    </div>
+  </div> <!-- closing #about_me section -->
 
 </div> <!-- closing #fullpage -->
 
@@ -90,6 +135,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="jquery.fullPage.min.js"></script>
   </body>
 </html>
